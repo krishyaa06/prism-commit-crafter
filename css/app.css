@@ -1,0 +1,11 @@
+.cc{grid-template-columns:1fr 1fr;align-items:start}.mt{margin-top:14px}
+.types{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px}
+.ty{display:flex;flex-direction:column;gap:2px;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:#ffffff03;text-align:left;cursor:pointer;color:var(--text)}
+.ty b{font:600 13px var(--mono)}.ty span{font-size:11.5px;color:var(--faint);line-height:1.35}
+.ty:hover{border-color:var(--line-2)}.ty.on{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,transparent)}.ty.on b{color:var(--accent)}
+.cnt{float:right;font:11px var(--mono);color:var(--faint)}.cnt.warn{color:var(--warn)}.cnt.bad{color:var(--bad)}
+.msg{min-height:150px;font-size:14px;color:var(--text)}
+.lint{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px}
+.lint li{display:flex;gap:8px}.lint .error::before{content:"✕";color:var(--bad)}.lint .warn::before{content:"!";color:var(--warn);font-weight:700;width:10px;text-align:center}.lint .ok::before{content:"✓";color:var(--ok)}
+.lint-in{min-height:100px}
+@media (max-width:860px){.cc{grid-template-columns:1fr}}

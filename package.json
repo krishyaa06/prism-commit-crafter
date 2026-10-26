@@ -1,0 +1,30 @@
+{
+  "name": "prism-commit-crafter",
+  "version": "1.0.0",
+  "description": "Conventional Commit builder and linter with gitmoji, breaking changes, issue footers and semver bump detection.",
+  "scripts": {
+    "test": "node --test",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "conventional-commits",
+    "git",
+    "commit-message",
+    "gitmoji",
+    "semver",
+    "commitlint",
+    "developer-tools",
+    "vanilla-js",
+    "prism-protocol"
+  ],
+  "author": "Soumya Bhandare (krishyaa06)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishyaa06/prism-commit-crafter.git"
+  },
+  "homepage": "https://krishyaa06.github.io/prism-commit-crafter/",
+  "engines": {
+    "node": ">=18.17"
+  }
+}

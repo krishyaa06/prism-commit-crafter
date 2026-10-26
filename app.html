@@ -1,0 +1,24 @@
+    <section class="grid cc">
+      <div class="card">
+        <div class="card-title"><h2>Type</h2><label class="check"><input type="checkbox" id="emoji" /> Gitmoji</label></div>
+        <div class="types" id="types"></div>
+        <div class="grid g2 mt"><label class="field">Scope <input id="scope" placeholder="auth, ui, api…" /></label><label class="field">Issues <input id="issues" placeholder="12, 34" /></label></div>
+        <label class="field mt">Subject <span class="cnt" id="cnt"></span><input id="subject" placeholder="add discord login to dashboard" /></label>
+        <label class="field mt">Body <textarea id="body" placeholder="Explain what and why, not how. Bullet lists are fine."></textarea></label>
+        <div class="row mt"><label class="check"><input type="checkbox" id="breaking" /> Breaking change</label><button class="btn small ghost" id="fix">Auto-fix subject</button></div>
+        <label class="field mt" id="bwrap" hidden>What breaks? <input id="btext" placeholder="config file moved to prism.config.ts" /></label>
+        <label class="field mt">Co-author <input id="coauthor" placeholder="Name <email@example.com>" /></label>
+      </div>
+      <div class="stack">
+        <div class="card">
+          <div class="card-title"><h2>Commit message</h2><div class="row"><span class="pill" id="bump"></span><button class="btn small" id="copyCmd">Copy git command</button><button class="btn small primary" id="copy">Copy</button></div></div>
+          <pre class="out msg" id="msg"></pre>
+          <ul class="lint" id="lint"></ul>
+        </div>
+        <div class="card">
+          <div class="card-title"><h2>Lint any message</h2></div>
+          <textarea id="lintIn" class="code lint-in" spellcheck="false" placeholder="Paste a commit message to check it">Added new Feature to Dashboard.</textarea>
+          <ul class="lint" id="lint2"></ul>
+        </div>
+      </div>
+    </section>
