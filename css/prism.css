@@ -57,3 +57,4 @@ mark{background:color-mix(in srgb,var(--accent) 30%,transparent);color:var(--tex
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 .pill:empty{display:none}
 .grid>*{min-width:0}
+[hidden]{display:none!important}
